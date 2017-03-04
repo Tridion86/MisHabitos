@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1217" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Habito" representedClassName=".Habito" syncable="YES">
+        <attribute name="diaActual" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dias" attributeType="Transformable" syncable="YES"/>
+        <attribute name="fechaInicio" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="habitoEstablecido" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hoyHecho" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nombre" attributeType="String" syncable="YES"/>
+        <attribute name="ultimaModificacion" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Habito" positionX="-45" positionY="0" width="128" height="150"/>
+    </elements>
+</model>

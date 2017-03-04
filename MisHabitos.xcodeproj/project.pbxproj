@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5750E37F1DFDE0FC002C414F /* HabitoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E37E1DFDE0FC002C414F /* HabitoCell.swift */; };
+		57556F601DF5B6EC005F4CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57556F5F1DF5B6EC005F4CBB /* AppDelegate.swift */; };
+		57556F621DF5B6EC005F4CBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57556F611DF5B6EC005F4CBB /* ViewController.swift */; };
+		57556F671DF5B6ED005F4CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57556F661DF5B6ED005F4CBB /* Assets.xcassets */; };
+		57556F721DF5B79D005F4CBB /* Habito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57556F711DF5B79D005F4CBB /* Habito.swift */; };
+		57841DFE1E2A7BCC00163C6C /* MisHabitos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57841DFC1E2A7BCC00163C6C /* MisHabitos.xcdatamodeld */; };
+		57AAAFC41E3E96F100C125D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57556F631DF5B6EC005F4CBB /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5750E37E1DFDE0FC002C414F /* HabitoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HabitoCell.swift; path = ../HabitoCell.swift; sourceTree = "<group>"; };
+		57556F5C1DF5B6EC005F4CBB /* MisHabitos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisHabitos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57556F5F1DF5B6EC005F4CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57556F611DF5B6EC005F4CBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57556F641DF5B6EC005F4CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57556F661DF5B6ED005F4CBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57556F691DF5B6ED005F4CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57556F6B1DF5B6ED005F4CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57556F711DF5B79D005F4CBB /* Habito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Habito.swift; sourceTree = "<group>"; };
+		57841DFD1E2A7BCC00163C6C /* MisHabitos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MisHabitos.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57556F591DF5B6EC005F4CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57556F531DF5B6EC005F4CBB = {
+			isa = PBXGroup;
+			children = (
+				57556F5E1DF5B6EC005F4CBB /* MisHabitos */,
+				57556F5D1DF5B6EC005F4CBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57556F5D1DF5B6EC005F4CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57556F5C1DF5B6EC005F4CBB /* MisHabitos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57556F5E1DF5B6EC005F4CBB /* MisHabitos */ = {
+			isa = PBXGroup;
+			children = (
+				5750E37E1DFDE0FC002C414F /* HabitoCell.swift */,
+				57556F5F1DF5B6EC005F4CBB /* AppDelegate.swift */,
+				57556F611DF5B6EC005F4CBB /* ViewController.swift */,
+				57556F631DF5B6EC005F4CBB /* Main.storyboard */,
+				57556F661DF5B6ED005F4CBB /* Assets.xcassets */,
+				57556F681DF5B6ED005F4CBB /* LaunchScreen.storyboard */,
+				57556F6B1DF5B6ED005F4CBB /* Info.plist */,
+				57556F711DF5B79D005F4CBB /* Habito.swift */,
+				57841DFC1E2A7BCC00163C6C /* MisHabitos.xcdatamodeld */,
+			);
+			path = MisHabitos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57556F5B1DF5B6EC005F4CBB /* MisHabitos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57556F6E1DF5B6ED005F4CBB /* Build configuration list for PBXNativeTarget "MisHabitos" */;
+			buildPhases = (
+				57556F581DF5B6EC005F4CBB /* Sources */,
+				57556F591DF5B6EC005F4CBB /* Frameworks */,
+				57556F5A1DF5B6EC005F4CBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MisHabitos;
+			productName = MisHabitos;
+			productReference = 57556F5C1DF5B6EC005F4CBB /* MisHabitos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57556F541DF5B6EC005F4CBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Arnau Timoneda Heredia";
+				TargetAttributes = {
+					57556F5B1DF5B6EC005F4CBB = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = ZP2E75MF9B;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 57556F571DF5B6EC005F4CBB /* Build configuration list for PBXProject "MisHabitos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57556F531DF5B6EC005F4CBB;
+			productRefGroup = 57556F5D1DF5B6EC005F4CBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57556F5B1DF5B6EC005F4CBB /* MisHabitos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57556F5A1DF5B6EC005F4CBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57556F671DF5B6ED005F4CBB /* Assets.xcassets in Resources */,
+				57AAAFC41E3E96F100C125D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57556F581DF5B6EC005F4CBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57556F621DF5B6EC005F4CBB /* ViewController.swift in Sources */,
+				57841DFE1E2A7BCC00163C6C /* MisHabitos.xcdatamodeld in Sources */,
+				57556F601DF5B6EC005F4CBB /* AppDelegate.swift in Sources */,
+				5750E37F1DFDE0FC002C414F /* HabitoCell.swift in Sources */,
+				57556F721DF5B79D005F4CBB /* Habito.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		57556F631DF5B6EC005F4CBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57556F641DF5B6EC005F4CBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57556F681DF5B6ED005F4CBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57556F691DF5B6ED005F4CBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57556F6C1DF5B6ED005F4CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57556F6D1DF5B6ED005F4CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57556F6F1DF5B6ED005F4CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZP2E75MF9B;
+				INFOPLIST_FILE = MisHabitos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.timoneda.MisHabitos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		57556F701DF5B6ED005F4CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZP2E75MF9B;
+				INFOPLIST_FILE = MisHabitos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.timoneda.MisHabitos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57556F571DF5B6EC005F4CBB /* Build configuration list for PBXProject "MisHabitos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57556F6C1DF5B6ED005F4CBB /* Debug */,
+				57556F6D1DF5B6ED005F4CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57556F6E1DF5B6ED005F4CBB /* Build configuration list for PBXNativeTarget "MisHabitos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57556F6F1DF5B6ED005F4CBB /* Debug */,
+				57556F701DF5B6ED005F4CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		57841DFC1E2A7BCC00163C6C /* MisHabitos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				57841DFD1E2A7BCC00163C6C /* MisHabitos.xcdatamodel */,
+			);
+			currentVersion = 57841DFD1E2A7BCC00163C6C /* MisHabitos.xcdatamodel */;
+			path = MisHabitos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 57556F541DF5B6EC005F4CBB /* Project object */;
+}
