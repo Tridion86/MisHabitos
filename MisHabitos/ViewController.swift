@@ -112,6 +112,9 @@ class ViewController : UIViewController {
             self.managedContext?.delete(self.habitos[index])
             self.habitos.remove(at: index)
             self.guardar()
+            if(!success){
+                self.actualizarHabitos()
+            }
         })
         alertController.addAction(anAction)
         
@@ -149,9 +152,6 @@ class ViewController : UIViewController {
                 }
             }
             
-            if h.dias.count >= 21 {
-                self.habitoCompletado(habito: h, index: i, success: false)
-            }
             print("count array = \(h.dias.count)")
             print("array de dias que evaluamos:: \(h.dias)")
             if h.esUnHabitoPerfecto(){
@@ -164,6 +164,11 @@ class ViewController : UIViewController {
             }
             h.hoyHecho = false
             h.ultimaModificacion = self.today
+            
+            if h.dias.count >= 21 {
+                self.habitoCompletado(habito: h, index: i, success: false)
+                break;
+            }
             print("DIA ACTUAL: \(h.diaActual) Y la longitud del array es: \(h.dias.count)")
 
         }
