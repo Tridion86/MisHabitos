@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5750E37E1DFDE0FC002C414F /* HabitoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HabitoCell.swift; path = ../HabitoCell.swift; sourceTree = "<group>"; };
+		5750E37E1DFDE0FC002C414F /* HabitoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitoCell.swift; sourceTree = "<group>"; };
 		57556F5C1DF5B6EC005F4CBB /* MisHabitos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisHabitos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57556F5F1DF5B6EC005F4CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57556F611DF5B6EC005F4CBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
