@@ -28,14 +28,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQh-lO-Ub4">
-                                <rect key="frame" x="86" y="617" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="pasar dia"/>
-                                <connections>
-                                    <action selector="botonTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4yL-oM-fvG"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vQQ-hg-hxx">
                                 <rect key="frame" x="16" y="131" width="343" height="476"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,19 +52,19 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23/11/2014" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9x-Z7-imt">
-                                                                    <rect key="frame" x="81" y="0.0" width="80.5" height="16"/>
+                                                                    <rect key="frame" x="81" y="0.0" width="81" height="16"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de fin:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ywk-nf-dex">
-                                                                    <rect key="frame" x="161.5" y="0.0" width="81" height="16"/>
+                                                                    <rect key="frame" x="162" y="0.0" width="80" height="16"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="11"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23/11/2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2E-NB-mdS">
-                                                                    <rect key="frame" x="242.5" y="0.0" width="80.5" height="16"/>
+                                                                    <rect key="frame" x="242" y="0.0" width="81" height="16"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -101,7 +93,6 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <action selector="activarHabito:" destination="BYZ-38-t0r" eventType="valueChanged" id="JKy-kp-j2f"/>
-                                                        <action selector="habitoHecho:" destination="XGi-CZ-Tsl" eventType="valueChanged" id="DeT-Dj-SgJ"/>
                                                     </connections>
                                                 </switch>
                                             </subviews>
@@ -125,14 +116,6 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="WiJ-Hp-t8P"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ts-Oo-44B">
-                                <rect key="frame" x="255" y="617" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="abrir app"/>
-                                <connections>
-                                    <action selector="actualizarDatos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q6m-Vm-OBD"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.87015297776753919" green="0.87015297776753919" blue="0.87015297776753919" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
