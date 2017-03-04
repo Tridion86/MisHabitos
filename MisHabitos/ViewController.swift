@@ -135,8 +135,18 @@ class ViewController : UIViewController {
             print("actualizamos el habito: \(h.nombre)")
             h.actualizarDiaActualDeHabito(date: self.today)
             //Metemos tantos falses como dias han pasado sin abrir la app
-            for _ in 0..<h.getDiasSinAbrir() {
-                h.dias.append(false)
+            
+            if(!h.hoyHecho){
+                for _ in 0..<h.getDiasSinAbrir() - 1 {
+                    print("Los dias sin abrir son: \(h.getDiasSinAbrir())")
+                    h.dias.append(false)
+                }
+                
+            } else if (h.hoyHecho && h.getDiasSinAbrir() > 1){
+                for _ in 0..<h.getDiasSinAbrir() - 1  {
+                    print("Los dias sin abrir pet son: \(h.getDiasSinAbrir())")
+                    h.dias.append(false)
+                }
             }
             
             if h.dias.count >= 21 {
@@ -160,8 +170,6 @@ class ViewController : UIViewController {
 
     }
     
-    //MARK: - Test methods
-
     func esDiaNuevo() -> Bool {
         var result = true
         if self.habitos.count > 0 {
@@ -174,18 +182,12 @@ class ViewController : UIViewController {
         return result
     }
     
-    func addTrueDays(habit: Habito, days: Int){
-        for _ in 0..<days {
-            habit.dias.append(true)
-        }
-    }
-
+    //MARK: - Test methods
     
     @IBAction func activarHabito(_ sender: UISwitch) {
         print("el habito pinchado es::: \(self.habitos[sender.tag].nombre)")
         
         let hab = self.habitos[sender.tag]
-        //hab.ultimaModificacion = self.today
         
         if sender.isOn {
             hab.dias.append(true)
