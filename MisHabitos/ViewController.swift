@@ -61,6 +61,7 @@ class ViewController : UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //Muestra un AlertView que permite añadir un hábito a nuestro array de hábitos y lo guarda en Core Data.
     @IBAction func añadirHabito(_ sender: Any) {
         //Muestra un pop up para introducir un nuevo hábito. Los hábitos empiezan el día 1
         let alertController : UIAlertController = UIAlertController(title: "Nuevo Hábito", message: "Introduce el nombre del nuevo hábito a establecer", preferredStyle: .alert)
@@ -96,6 +97,7 @@ class ViewController : UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
+    //Muestra un AlertView con mensajes dependiendo si hemos completado o no el hábito.
     func habitoCompletado(habito:Habito, index:Int, success:Bool) {
         var message:String
         var title:String
@@ -121,9 +123,10 @@ class ViewController : UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
+    //Guarda los hábitos en Core Data.
     func guardar(){
-        //Guarda el managed context para persistir los datos
         do{
+            //Guarda el managed context para persistir los datos
             try self.managedContext?.save()
             
         } catch {
@@ -131,6 +134,7 @@ class ViewController : UIViewController {
         }
     }
 
+    //Actualiza el estado actual de los hábitos.
     @IBAction func actualizarHabitos() {
         //Ha pasado un dia(o más), revisamos los habitos para actualizar el dia actual, poner el hecho hoy a false y comprovar si vamos bien o no(Actualizar el array de dias)
         for i in 0..<habitos.count {
@@ -175,6 +179,7 @@ class ViewController : UIViewController {
 
     }
     
+    //Detecta si ha pasado un día desde la última vez que se abrió la aplicación.
     func esDiaNuevo() -> Bool {
         var result = true
         if self.habitos.count > 0 {

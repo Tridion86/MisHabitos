@@ -15,14 +15,17 @@ class Habito : NSManagedObject {
     @NSManaged var diaActual:NSNumber
     @NSManaged var habitoEstablecido:Bool
     @NSManaged var hoyHecho:Bool
-    @NSManaged var dias :[Bool]!
+    @NSManaged var dias:[Bool]!
     @NSManaged var ultimaModificacion :Date!
+    @NSManaged var finalizado:Bool
     
+    //Calcula la fecha cuando ha de terminar el hábito.
     func calcularFechaFin(fecha:Date) -> Date {
         //Añadimos 21 días a la fecha de inicio
         return fecha.addingTimeInterval(86400 * 21)
     }
     
+    //Actualiza el número de día del hábito.
     func actualizarDiaActualDeHabito(date:Date) {
         //Calcula los dias desde que se empezó el Hábito hasta la fecha actual,
         let calendar = NSCalendar.current
@@ -30,6 +33,7 @@ class Habito : NSManagedObject {
         self.diaActual = components.day! + 1 as NSNumber
     }
     
+    //Devuelve si el hábito ha sido realizado todos los días desde que se creo.
     func esUnHabitoPerfecto() -> Bool {
         var result:Bool = true
         //Es perfecto a no ser que haya algún false en el array de dias,
@@ -39,11 +43,10 @@ class Habito : NSManagedObject {
             (self.diaActual as Int - self.dias.count as Int > 1){
             result = false
         }
-        
-        
         return result
     }
 
+    //Devuelve el número de días que se ha marcado el hábito como hecho.
     func getDaysDone() -> Int {
         var result:Int = 0
         for d in self.dias {
@@ -54,6 +57,7 @@ class Habito : NSManagedObject {
         return result
     }
     
+    //Devuelve el número de días que han pasado desde la última vez que se actualizó el hábito.
     func getDiasSinAbrir() -> Int {
         return self.diaActual as Int - self.dias.count
     }
