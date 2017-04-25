@@ -58,10 +58,7 @@ extension HabitosFinalizadosViewController : UITableViewDataSource, UITableViewD
         let cellId = "habitoCell"
         
         let cell = self.tablaHabitosFinalizados.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! HabitoCell
-        
-        cell.nombreHabito.text = habito.nombre
-        /*
-        let cell = self.tablaHabitos.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! HabitoCell
+
         cell.habitoCell = habito
         cell.nombreHabito.text = habito.nombre
         
@@ -72,8 +69,8 @@ extension HabitosFinalizadosViewController : UITableViewDataSource, UITableViewD
         cell.fechaFin.text = dateFormatter.string(from: habito.calcularFechaFin(fecha: habito.fechaInicio))
         let progreso:Float = Float(habito.getDaysDone()) / Float(21)
         
-        cell.botonHecho.tag = indexPath.row
-        cell.botonHecho.isOn = habito.hoyHecho
+        //cell.botonHecho.tag = indexPath.row
+        //cell.botonHecho.isOn = habito.hoyHecho
         
         
         //Diseño celda
@@ -95,8 +92,8 @@ extension HabitosFinalizadosViewController : UITableViewDataSource, UITableViewD
         }
         cell.barraProgreso.progress = progreso
         
-        print("DIBUJO: \(cell.nombreHabito.text)")
-        */
+        print("DIBUJO2: \(cell.nombreHabito.text)")
+
         return cell
     }
     
