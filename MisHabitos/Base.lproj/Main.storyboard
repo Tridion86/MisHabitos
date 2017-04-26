@@ -52,13 +52,13 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23/11/2014" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="g9x-Z7-imt">
-                                                                    <rect key="frame" x="100" y="0.0" width="67" height="16"/>
+                                                                    <rect key="frame" x="100" y="0.0" width="67.5" height="16"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de fin:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ywk-nf-dex">
-                                                                    <rect key="frame" x="169" y="0.0" width="84" height="16"/>
+                                                                    <rect key="frame" x="169.5" y="0.0" width="83.5" height="16"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -85,13 +85,13 @@
                                                     <rect key="frame" x="10" y="0.0" width="303" height="50"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aqui ponemos un poco de texto" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wWM-if-trU">
-                                                            <rect key="frame" x="0.0" y="10" width="254" height="30"/>
+                                                            <rect key="frame" x="0.0" y="10" width="253.5" height="30"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cye-0J-CZm">
-                                                            <rect key="frame" x="264" y="10" width="41" height="31"/>
+                                                            <rect key="frame" x="263.5" y="9.5" width="41.5" height="31"/>
                                                             <connections>
                                                                 <action selector="activarHabito:" destination="BYZ-38-t0r" eventType="valueChanged" id="JKy-kp-j2f"/>
                                                                 <action selector="habitoHecho:" destination="XGi-CZ-Tsl" eventType="valueChanged" id="DeT-Dj-SgJ"/>
@@ -173,11 +173,11 @@
             </objects>
             <point key="canvasLocation" x="1911.2" y="37.331334332833585"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--En progreso-->
         <scene sceneID="Mqf-FR-38b">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jaG-KO-nVn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="recents" id="iF0-aW-ijJ"/>
+                    <tabBarItem key="tabBarItem" title="En progreso" image="todo" selectedImage="todo" id="iF0-aW-ijJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0We-GI-OHU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -223,7 +223,7 @@
                         <viewControllerLayoutGuide type="top" id="7ei-Lr-QNJ"/>
                         <viewControllerLayoutGuide type="bottom" id="Wef-un-Lcb"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="YDt-dg-TWy">
+                    <view key="view" contentMode="scaleToFill" id="YDt-dg-TWy">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -245,25 +245,25 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="317" height="16"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de inico:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lEr-NA-Ijh">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="96" height="16"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="96.5" height="16"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23/11/2014" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tKf-mG-GVD">
-                                                                    <rect key="frame" x="98" y="0.0" width="66" height="16"/>
+                                                                    <rect key="frame" x="98.5" y="0.0" width="66" height="16"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de fin:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rDb-4F-ei4">
-                                                                    <rect key="frame" x="166" y="0.0" width="82" height="16"/>
+                                                                    <rect key="frame" x="166.5" y="0.0" width="82" height="16"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23/11/2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Dsr-bi-1zD">
-                                                                    <rect key="frame" x="250" y="0.0" width="67" height="16"/>
+                                                                    <rect key="frame" x="250.5" y="0.0" width="66.5" height="16"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -346,11 +346,11 @@
             </objects>
             <point key="canvasLocation" x="970.39999999999998" y="820.83958020989508"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Terminados-->
         <scene sceneID="M9h-xm-aYf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VP8-Yk-oBq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="history" id="uNK-N0-Mw3"/>
+                    <tabBarItem key="tabBarItem" title="Terminados" image="done" selectedImage="done" id="uNK-N0-Mw3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ryG-e6-2qD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -370,4 +370,8 @@
             <point key="canvasLocation" x="33" y="822"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="done" width="16" height="16"/>
+        <image name="todo" width="16" height="16"/>
+    </resources>
 </document>
