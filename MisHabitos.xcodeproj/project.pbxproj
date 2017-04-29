@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		570703D11EA12EEA0076F577 /* HabitosFinalizadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570703D01EA12EEA0076F577 /* HabitosFinalizadosViewController.swift */; };
 		5750E37F1DFDE0FC002C414F /* HabitoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E37E1DFDE0FC002C414F /* HabitoCell.swift */; };
 		57556F601DF5B6EC005F4CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57556F5F1DF5B6EC005F4CBB /* AppDelegate.swift */; };
 		57556F621DF5B6EC005F4CBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57556F611DF5B6EC005F4CBB /* ViewController.swift */; };
 		57556F671DF5B6ED005F4CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57556F661DF5B6ED005F4CBB /* Assets.xcassets */; };
 		57556F721DF5B79D005F4CBB /* Habito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57556F711DF5B79D005F4CBB /* Habito.swift */; };
+		57588EB31EA6BE3700B62731 /* HabitosFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57588EB21EA6BE3700B62731 /* HabitosFactory.swift */; };
 		57841DFE1E2A7BCC00163C6C /* MisHabitos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57841DFC1E2A7BCC00163C6C /* MisHabitos.xcdatamodeld */; };
 		57AAAFC41E3E96F100C125D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57556F631DF5B6EC005F4CBB /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		570703D01EA12EEA0076F577 /* HabitosFinalizadosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitosFinalizadosViewController.swift; sourceTree = "<group>"; };
 		5750E37E1DFDE0FC002C414F /* HabitoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitoCell.swift; sourceTree = "<group>"; };
 		57556F5C1DF5B6EC005F4CBB /* MisHabitos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisHabitos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57556F5F1DF5B6EC005F4CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		57556F691DF5B6ED005F4CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57556F6B1DF5B6ED005F4CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57556F711DF5B79D005F4CBB /* Habito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Habito.swift; sourceTree = "<group>"; };
+		57588EB21EA6BE3700B62731 /* HabitosFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitosFactory.swift; sourceTree = "<group>"; };
 		57841DFD1E2A7BCC00163C6C /* MisHabitos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MisHabitos.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +67,8 @@
 				57556F5F1DF5B6EC005F4CBB /* AppDelegate.swift */,
 				57556F611DF5B6EC005F4CBB /* ViewController.swift */,
 				57556F631DF5B6EC005F4CBB /* Main.storyboard */,
+				57588EB21EA6BE3700B62731 /* HabitosFactory.swift */,
+				570703D01EA12EEA0076F577 /* HabitosFinalizadosViewController.swift */,
 				57556F661DF5B6ED005F4CBB /* Assets.xcassets */,
 				57556F681DF5B6ED005F4CBB /* LaunchScreen.storyboard */,
 				57556F6B1DF5B6ED005F4CBB /* Info.plist */,
@@ -144,10 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				570703D11EA12EEA0076F577 /* HabitosFinalizadosViewController.swift in Sources */,
 				57556F621DF5B6EC005F4CBB /* ViewController.swift in Sources */,
 				57841DFE1E2A7BCC00163C6C /* MisHabitos.xcdatamodeld in Sources */,
 				57556F601DF5B6EC005F4CBB /* AppDelegate.swift in Sources */,
 				5750E37F1DFDE0FC002C414F /* HabitoCell.swift in Sources */,
+				57588EB31EA6BE3700B62731 /* HabitosFactory.swift in Sources */,
 				57556F721DF5B79D005F4CBB /* Habito.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
