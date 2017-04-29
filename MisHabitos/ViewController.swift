@@ -27,7 +27,6 @@ class ViewController : UIViewController {
         self.tablaHabitos.tableFooterView = UIView(frame: CGRect.zero)
         
         if(self.esDiaNuevo()) {
-            print("ES DIA NUEVO")
             actualizarHabitos()
         }
     }
@@ -97,32 +96,20 @@ class ViewController : UIViewController {
         //Ha pasado un dia(o más), revisamos los habitos para actualizar el dia actual, poner el hecho hoy a false y comprovar si vamos bien o no(Actualizar el array de dias)
         for i in 0..<habitos.count {
             let h:Habito = habitos[i]
-            print("actualizamos el habito: \(h.nombre)")
             h.actualizarDiaActualDeHabito(date: self.today)
             //Metemos tantos falses como dias han pasado sin abrir la app
             
             if(!h.hoyHecho){
-                print("Los dias sin abrir son: \(h.getDiasSinAbrir())")
                 for _ in 0..<h.getDiasSinAbrir() - 1 {
-                    print("Los dias sin abrir son: \(h.getDiasSinAbrir())")
                     h.dias.append(false)
                 }
                 
             } else if (h.hoyHecho && h.getDiasSinAbrir() > 1){
                 for _ in 0..<h.getDiasSinAbrir() - 1  {
-                    print("Los dias sin abrir pet son: \(h.getDiasSinAbrir())")
                     h.dias.append(false)
                 }
             }
             
-            print("array de dias que evaluamos:: \(h.dias)")
-            if h.esUnHabitoPerfecto(){
-                print("Vamos bien con el habito: \(h.nombre!), y hoyHecho: \(h.hoyHecho)")
-                //Sino, hemos fracasado con el habito.
-            }else{
-                print("hemos fracasdo con el hábito: \(h.nombre!), y hoyHecho: \(h.hoyHecho)")
-                //indexToRemove.append(index)
-            }
             h.hoyHecho = false
             h.ultimaModificacion = self.today
             
@@ -130,7 +117,6 @@ class ViewController : UIViewController {
                 self.habitoCompletado(habito: h, index: i, success: false)
                 break;
             }
-            print("DIA ACTUAL: \(h.diaActual) Y la longitud del array es: \(h.dias.count)")
             self.tablaHabitos.reloadData()
             HabitosFactory.sharedInstance.guardar()
 
@@ -153,7 +139,6 @@ class ViewController : UIViewController {
     
     
     @IBAction func activarHabito(_ sender: UISwitch) {
-        print("el habito pinchado es::: \(self.habitos[sender.tag].nombre)")
         
         let hab = self.habitos[sender.tag]
         if sender.isOn {
@@ -172,18 +157,6 @@ class ViewController : UIViewController {
         self.tablaHabitos.reloadRows(at: [index], with: .fade)
         HabitosFactory.sharedInstance.guardar()
     }
-
-    
-    //MARK: - Test methods
-    
-    @IBAction func botonTest(_ sender: Any) {
-        self.today = self.today.addingTimeInterval(86400 * 1)
-        print("ha pasado un dia")
-    }
-    @IBAction func actualizarDatos(_ sender: Any) {
-        self.viewDidLoad()
-    }
-    
 }
 
 //La clase hereda los métodos de UITableViewController y así podemos customizarlos
@@ -196,7 +169,6 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //Número de celdas que va a tener la tabla.
-        print(":::::::PUES HAY:: \(self.habitos.count) habitos")
         return self.habitos.count
     }
     
@@ -237,8 +209,6 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
             
         }
         cell.barraProgreso.progress = progreso
-        
-        print("DIBUJO: \(cell.nombreHabito.text)")
         
         return cell
     }

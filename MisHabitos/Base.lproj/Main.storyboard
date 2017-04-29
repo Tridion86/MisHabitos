@@ -94,7 +94,6 @@
                                                             <rect key="frame" x="263.5" y="9.5" width="41.5" height="31"/>
                                                             <connections>
                                                                 <action selector="activarHabito:" destination="BYZ-38-t0r" eventType="valueChanged" id="JKy-kp-j2f"/>
-                                                                <action selector="habitoHecho:" destination="XGi-CZ-Tsl" eventType="valueChanged" id="DeT-Dj-SgJ"/>
                                                             </connections>
                                                         </switch>
                                                     </subviews>
@@ -127,30 +126,12 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="WiJ-Hp-t8P"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ts-Oo-44B">
-                                <rect key="frame" x="242" y="578" width="62" height="30"/>
-                                <state key="normal" title="abrir app"/>
-                                <connections>
-                                    <action selector="actualizarDatos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q6m-Vm-OBD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQh-lO-Ub4">
-                                <rect key="frame" x="71" y="578" width="63" height="30"/>
-                                <state key="normal" title="pasar dia"/>
-                                <connections>
-                                    <action selector="botonTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4yL-oM-fvG"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="NQh-lO-Ub4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="0Tm-qP-umT"/>
                             <constraint firstItem="vQQ-hg-hxx" firstAttribute="top" secondItem="WaJ-ff-TkK" secondAttribute="bottom" constant="20" id="5V7-h1-ol5"/>
                             <constraint firstItem="WaJ-ff-TkK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="GOb-ak-zVv"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4ts-Oo-44B" secondAttribute="bottom" constant="10" id="Gco-Lh-j1B"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4ts-Oo-44B" secondAttribute="trailing" constant="55" id="Goe-x8-59f"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vQQ-hg-hxx" secondAttribute="bottom" constant="50" id="HTp-Ut-Rfc"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NQh-lO-Ub4" secondAttribute="bottom" constant="10" id="VJV-Mn-lOi"/>
                             <constraint firstItem="WaJ-ff-TkK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Zzk-Gb-OEo"/>
                             <constraint firstItem="vQQ-hg-hxx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="k4b-JE-dQy"/>
                             <constraint firstItem="vQQ-hg-hxx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lio-td-lzh"/>

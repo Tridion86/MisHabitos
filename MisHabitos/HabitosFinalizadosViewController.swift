@@ -14,13 +14,10 @@ class HabitosFinalizadosViewController: UIViewController {
     @IBOutlet weak var tablaHabitosFinalizados: UITableView!
     
     var habitosFinalizados: [Habito] = []
-    //var managedContext: NSManagedObjectContext? = nil
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("nueva vista")
         habitosFinalizados = HabitosFactory.sharedInstance.getHabitos(completed: true)
         
         self.tablaHabitosFinalizados.backgroundColor = self.view.backgroundColor
@@ -68,11 +65,7 @@ extension HabitosFinalizadosViewController : UITableViewDataSource, UITableViewD
         cell.fechaInicio.text = dateFormatter.string(from: (habito.fechaInicio!))
         cell.fechaFin.text = dateFormatter.string(from: habito.calcularFechaFin(fecha: habito.fechaInicio))
         let progreso:Float = Float(habito.getDaysDone()) / Float(21)
-        
-        //cell.botonHecho.tag = indexPath.row
-        //cell.botonHecho.isOn = habito.hoyHecho
-        
-        
+
         //Diseño celda
         //cell.layer.cornerRadius = 10
         
@@ -91,8 +84,6 @@ extension HabitosFinalizadosViewController : UITableViewDataSource, UITableViewD
             
         }
         cell.barraProgreso.progress = progreso
-        
-        print("DIBUJO2: \(cell.nombreHabito.text)")
 
         return cell
     }
