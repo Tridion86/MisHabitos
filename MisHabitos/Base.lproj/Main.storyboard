@@ -209,6 +209,7 @@
                     <connections>
                         <segue destination="jaG-KO-nVn" kind="relationship" relationship="viewControllers" id="eaL-we-GM0"/>
                         <segue destination="VP8-Yk-oBq" kind="relationship" relationship="viewControllers" id="iPt-yx-qTK"/>
+                        <segue destination="E93-83-4GD" kind="relationship" relationship="viewControllers" id="cfH-Gk-qef"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yVG-xn-JML" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -344,7 +345,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j1d-H0-Pu2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="970.39999999999998" y="820.83958020989508"/>
+            <point key="canvasLocation" x="1911" y="880"/>
         </scene>
         <!--Terminados-->
         <scene sceneID="M9h-xm-aYf">
@@ -367,11 +368,68 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1n0-Kf-UhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33" y="822"/>
+            <point key="canvasLocation" x="972" y="880"/>
+        </scene>
+        <!--21 días-->
+        <scene sceneID="4F3-0r-ECZ">
+            <objects>
+                <viewController id="zMV-q9-iC4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zTN-tk-K9V"/>
+                        <viewControllerLayoutGuide type="bottom" id="nlB-hW-VAL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WmK-Am-f8z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xj-Dv-VBN">
+                                <rect key="frame" x="36" y="124" width="303" height="249.5"/>
+                                <string key="text">21 días son los que, según muchos expertos, has de repetir una cosa para que se convierta en hábito, para que se convierta en una acción prácticamente innata, que la hagamos sin pensar, sin ser consciente de ello. A partir de esto, esta aplicación te ayuda a llevar el control de los hábitos que quieras establecer para conseguir una vida más ordenada y saludable.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Xj-Dv-VBN" secondAttribute="trailing" constant="20" id="0cz-oe-uWx"/>
+                            <constraint firstItem="8Xj-Dv-VBN" firstAttribute="top" secondItem="zTN-tk-K9V" secondAttribute="bottom" constant="60" id="FPS-WW-Hgo"/>
+                            <constraint firstItem="8Xj-Dv-VBN" firstAttribute="leading" secondItem="WmK-Am-f8z" secondAttribute="leadingMargin" constant="20" id="dHy-Fo-Bgv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="21 días" id="J4C-CP-Ibg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SIm-vB-NhN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1909.5999999999999" y="1716.7916041979013"/>
+        </scene>
+        <!--Información-->
+        <scene sceneID="wUD-fi-aZM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E93-83-4GD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Información" image="info" id="HYm-Bm-BjF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O6a-vb-vWM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.379434243" green="0.40980783050000003" blue="0.46067815109999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zMV-q9-iC4" kind="relationship" relationship="rootViewController" id="d2m-9E-daN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SwY-Er-TlL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="1717"/>
         </scene>
     </scenes>
     <resources>
         <image name="done" width="16" height="16"/>
+        <image name="info" width="16" height="16"/>
         <image name="todo" width="16" height="16"/>
     </resources>
 </document>
