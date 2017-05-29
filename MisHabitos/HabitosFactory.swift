@@ -47,7 +47,7 @@ class HabitosFactory: NSObject {
         nuevoHabito.diaActual = diaActual
         nuevoHabito.habitoEstablecido = habitoEstablecido
         nuevoHabito.hoyHecho = hoyHecho
-        nuevoHabito.dias = dias
+        nuevoHabito.setDias(dias: dias)
         nuevoHabito.ultimaModificacion = ultimaModificacion
         nuevoHabito.finalizado = finalizado
         

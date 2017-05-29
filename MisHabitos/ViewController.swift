@@ -101,19 +101,19 @@ class ViewController : UIViewController {
             
             if(!h.hoyHecho){
                 for _ in 0..<h.getDiasSinAbrir() - 1 {
-                    h.dias.append(false)
+                    h.addDay(day:false)
                 }
                 
             } else if (h.hoyHecho && h.getDiasSinAbrir() > 1){
                 for _ in 0..<h.getDiasSinAbrir() - 1  {
-                    h.dias.append(false)
+                    h.addDay(day: false)
                 }
             }
             
             h.hoyHecho = false
             h.ultimaModificacion = self.today
             
-            if h.dias.count >= 21 {
+            if h.getTotalDays() >= 21 {
                 self.habitoCompletado(habito: h, index: i, success: false)
                 break;
             }
@@ -142,7 +142,7 @@ class ViewController : UIViewController {
         
         let hab = self.habitos[sender.tag]
         if sender.isOn {
-            hab.dias.append(true)
+            hab.addDay(day: true)
             hab.hoyHecho = true
             
             if(hab.diaActual as Int == 21){
@@ -150,7 +150,7 @@ class ViewController : UIViewController {
             }
             
         }else{
-            hab.dias.removeLast()
+            hab.removeLastDay()
             hab.hoyHecho = false
         }
         let index : IndexPath = IndexPath(row: sender.tag , section: 0)

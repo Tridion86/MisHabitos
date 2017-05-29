@@ -15,7 +15,7 @@ class Habito : NSManagedObject {
     @NSManaged var diaActual:NSNumber
     @NSManaged var habitoEstablecido:Bool
     @NSManaged var hoyHecho:Bool
-    @NSManaged var dias:[Bool]!
+    @NSManaged private var dias:[Bool]!
     @NSManaged var ultimaModificacion :Date!
     @NSManaged var finalizado:Bool
     
@@ -60,6 +60,22 @@ class Habito : NSManagedObject {
     //Devuelve el número de días que han pasado desde la última vez que se actualizó el hábito.
     func getDiasSinAbrir() -> Int {
         return self.diaActual as Int - self.dias.count
+    }
+    
+    func addDay(day:Bool){
+        self.dias.append(day)
+    }
+    
+    func removeLastDay(){
+        self.dias.removeLast()
+    }
+    
+    func getTotalDays() -> Int{
+        return self.dias.count
+    }
+    
+    func setDias(dias:[Bool]){
+        self.dias = dias;
     }
     
     func toString(){
